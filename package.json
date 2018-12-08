@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-v4",
+  "version": "1.0.0",
+  "description": "Image Credits\r Background - Daniel Leone(Unsplash)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "./node_modules/.bin/gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p1nkpl4typus/portfolio-v4.git"
+  },
+  "author": "Shelagh Storla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p1nkpl4typus/portfolio-v4/issues"
+  },
+  "homepage": "https://github.com/p1nkpl4typus/portfolio-v4#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
