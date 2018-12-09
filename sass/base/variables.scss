@@ -1,0 +1,23 @@
+// *******************
+// FONTS
+// *******************
+@import url('https://fonts.googleapis.com/css?family=Montez|Wire+One');
+$heading-txt: 'Montez', cursive;
+$body-txt: 'Wire One', sans-serif;
+
+
+// *******************
+// COLOURS
+// *******************
+$slate-blue: rgb(75, 119, 130);
+$slate-blue-transparent: rgba(75, 119, 130, 0.7);
+
+
+// *******************
+// ANIMATIONS
+// *******************
+$s--near: 10s;
+$s--mid: ($s--near * 2);
+$s--far: ($s--near * 3);
+
+$ease--out-quad: cubic-bezier(.25,.46,.450,.94);
