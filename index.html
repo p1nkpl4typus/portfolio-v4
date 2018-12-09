@@ -12,7 +12,7 @@
 <body>
     <div id="pagewrap">
         
-        <div class="display-wrap show">
+        <div class="display-wrap">
             <section id="splash">
                 <div class="its-snowing">
                     <div class="snow snow--near"></div>
@@ -64,7 +64,7 @@
             </section>
         </div>
 
-        <div class="display-wrap">
+        <div class="display-wrap show">
             <section id="contact">
                 <div class="top-bar">
                     <div>
@@ -139,6 +139,37 @@
                             </a>
                         </div>
                     </div>
+                    <p>Otherwise, drop me a note here!</p>
+                    <p><span>All fields are required.</span></p>
+                        <div class="contact-form">
+                            <form action="" method="POST">
+                                <div>
+                                    <label for="name">Name:</label>
+                                    <input type="text" name="name" id="name" required />
+
+                                </div>
+                                <div>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email" required />
+
+                                </div>
+                                <div class="textbox">
+                                    <div>
+                                        <label for="message">Your Message:</label>
+                                    </div>
+                                    <div>
+                                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Say Hi!..." required ></textarea>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <input type="submit" name="submit" id="submit">
+
+                                </div>
+
+                            </form>
+                            
+                        </div>
                     <div class="copyright">
                         <div>
                             © Copyright 2018 - Shelagh Storla
