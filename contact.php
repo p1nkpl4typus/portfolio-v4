@@ -1,7 +1,7 @@
 <?php
 
 $data = $_POST;
-dd($data);
+var_dump($data);
 
 $name = $_POST['name'];
 $email = $_POST['email'];

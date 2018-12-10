@@ -12,7 +12,7 @@
 <body>
     <div id="pagewrap">
         
-        <div class="display-wrap">
+        <div class="display-wrap show">
             <section id="splash">
                 <div class="its-snowing">
                     <div class="snow snow--near"></div>
@@ -64,7 +64,7 @@
             </section>
         </div>
 
-        <div class="display-wrap show">
+        <div class="display-wrap">
             <section id="contact">
                 <div class="top-bar">
                     <div>
@@ -142,7 +142,7 @@
                     <p>Otherwise, drop me a note here!</p>
                     <p><span>All fields are required.</span></p>
                         <div class="contact-form">
-                            <form action="" method="POST">
+                            <form action="http://localhost/portfolio/contact.php" method="POST">
                                 <div>
                                     <label for="name">Name:</label>
                                     <input type="text" name="name" id="name" required />
@@ -190,6 +190,7 @@
 
     <script src="./js/classie.js"></script>
 	<script src="./js/svgLoader.js"></script>
+	<script src="./js/app.js"></script>
 		<script>
             (function() {
                 var pageWrap = document.getElementById( 'pagewrap' ),
