@@ -13,7 +13,12 @@ body {
         font-weight: bold;
         color: #fff;
         text-shadow: 1px 0px 5px #000;
+        margin-bottom: 10px;
     }
+}
+
+.wrapper {
+    width: 80%;
 }
 
 .top-bar {
@@ -45,11 +50,34 @@ body {
         vertical-align: middle;
         font-size: 0.25em;
     }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .main-logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
 }
 
 .content {
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 // .copyright {
 //     text-align: center;
