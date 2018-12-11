@@ -28,7 +28,7 @@
 
     .social-links,
     .email,
-    .contact-form {
+    .contact-form-box {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -102,7 +102,7 @@
     }
 }
 
-.contact-form {
+.contact-form-box {
     flex-direction: column;
 
     input {
