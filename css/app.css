@@ -347,7 +347,6 @@ nav {
 #about {
   background: linear-gradient(to bottom, rgba(112, 119, 120, 0.9), rgba(112, 119, 120, 0.9)), url("../assets/images/shelagh1.jpg");
   background-size: cover;
-  background-position: 2000% 50%;
   background-repeat: no-repeat;
   background-color: #707778;
   height: 100vh;
@@ -355,10 +354,15 @@ nav {
   #about h4 {
     font-size: 2em; }
 
+@media screen and (max-width: 975px) {
+  #about {
+    background-position: 50% 50%; } }
+
 #my-work {
   background: linear-gradient(to bottom, rgba(75, 119, 130, 0.7), rgba(75, 119, 130, 0.7)), url("../assets/images/alt-bg.jpg");
   background-size: cover;
-  background-color: #4b7782; }
+  background-color: #4b7782;
+  min-height: 100vh; }
   #my-work .card-wrap {
     display: flex;
     justify-content: center;
@@ -368,7 +372,7 @@ nav {
       margin: 20px;
       background-color: #fff;
       height: 250px;
-      width: 500px;
+      width: 400px;
       border-radius: 5px;
       box-shadow: 1px 1px 10px -2px #000; }
       #my-work .card-wrap .card .img-wrap {
@@ -427,3 +431,8 @@ nav {
             color: #fff;
             transition: 0.2s;
             cursor: pointer; }
+
+@media screen and (max-width: 740px) {
+  .img-wrap:hover .img {
+    visibility: hidden;
+    opacity: 0; } }

@@ -3,6 +3,7 @@
                     url("../assets/images/alt-bg.jpg");
         background-size: cover;
         background-color: $slate-blue;
+        min-height: 100vh;
 
     .card-wrap {
         display: flex;
@@ -14,7 +15,7 @@
             margin: 20px;
             background-color: #fff;
             height: 250px;
-            width: 500px;
+            width: 400px;
             // border: 1px solid #ddd;
             border-radius: 5px;
             box-shadow: 1px 1px 10px -2px #000;
@@ -98,5 +99,12 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .img-wrap:hover .img {
+        visibility: hidden;
+        opacity: 0;
     }
 }
