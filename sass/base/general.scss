@@ -21,6 +21,23 @@ body {
     width: 80%;
 }
 
+.no-display {
+    opacity: 0;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.appear {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+
 .top-bar {
     display: flex;
     justify-content: space-between;

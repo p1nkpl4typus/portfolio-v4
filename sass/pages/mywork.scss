@@ -1,3 +1,65 @@
 #my-work {
     background-color: #ccc;
+
+    .card {
+        margin: 20px 0;
+        background-color: #fff;
+        height: 250px;
+        width: 500px;
+        // border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px -2px #000;
+
+        .img-wrap {
+            z-index: 3;
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+
+            .img {
+                height: 100%;
+                width: 100%;
+                background-color: #000;
+                border-radius: 5px;
+                box-shadow: 1px 1px 10px -2px #000;
+                transform: scale(1) translate(0%, 0%);
+                transition: all 0.2s ease-in;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .img-wrap:hover .img {
+            transform: scale(0.5) translate(-100%, -100%);
+            transition: all 0.2s ease-in;
+        }
+
+        .card-content {
+            position: relative;
+
+            p {
+                color: $slate-blue;
+                text-shadow: none;
+                font-size: 1.2em;
+            }
+
+            .project-title {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                text-align: right;
+            }
+
+            .project-tech {
+                position: absolute;
+                top: 110px;
+                left: 22px;
+            }
+        }
+    }
+
+
 }
