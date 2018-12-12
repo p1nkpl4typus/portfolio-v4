@@ -13,11 +13,11 @@
 <body>
     <div id="pagewrap">
         
-        <div class="display-wrap">
+        <div class="display-wrap show">
             <section id="splash">
                 <div class="top-bar main-logo">
                     <div class="logo"><img src="./assets/logo1.png" alt="Shelagh Storla"></div>
-                </div>
+                </div><!-- /top-bar -->
                 <div class="its-snowing">
                     <div class="snow snow--near"></div>
                     <div class="snow snow--near snow--alt"></div>
@@ -27,7 +27,7 @@
                     
                     <div class="snow snow--far"></div>
                     <div class="snow snow--far snow--alt"></div>
-                </div>
+                </div><!-- /its-snowing -->
                 <div class="title">
                     <h1>Shelagh Storla</h1>
                     <h2>Web Developer  - Calgary, Alberta</h2>
@@ -37,9 +37,9 @@
                     <a class="pageload-link" href="#my-work" id="2">My Work</a>
                     <a class="pageload-link" href="#contact" id="3">Contact</a>
                 </nav>
-            </section>
-        </div>
-    
+            </section><!-- /splash -->
+        </div><!-- /display-wrap -->
+
         <div class="display-wrap">
             <section id="about">
                 <div class="top-bar">
@@ -50,7 +50,7 @@
                         <h3><span>•</span> About <span>•</span></h3>
                     </div>
                     <div class="logo"><a class="pageload-link" href="#splash"><img src="./assets/logo1.png" alt="Shelagh Storla"></a></div>
-                </div>
+                </div><!-- /top-bar -->
                 <div class="content">
                     <div class="wrapper">
                         <h4>Oh, Hey There!</h4>
@@ -74,12 +74,17 @@
                             <li></li>
                             <li></li>
                         </ul>
-                    </div>
-                </div>
-            </section>
-        </div>
+                    </div><!-- /wrapper -->
+                    <div class="copyright">
+                        <div>
+                            © Copyright 2018 - Shelagh Storla
+                        </div>
+                    </div><!-- /copyright -->
+                </div><!-- /content -->
+            </section><!-- /about -->
+        </div><!-- /display-wrap -->
         
-        <div class="display-wrap show">
+        <div class="display-wrap">
             <section id="my-work">
                 <div class="top-bar">
                     <div>
@@ -89,74 +94,225 @@
                         <h3><span>•</span> My Work <span>•</span></h3>
                     </div>
                     <div class="logo"><a class="pageload-link" href="#splash"><img src="./assets/logo1.png" alt="Shelagh Storla"></a></div>
-                </div>
+                </div><!-- /top-bar -->
                 <div class="content">
-                    <div class="card">
-                        <div class="img-wrap">
-                            <div class="card-content">
-                                <div class="project-title">
-                                    <p>Cookem' Ipsum</p>
-                                    <p>Chef Inspired Lorem Ipsum Text Generator</p>
-                                </div>
-                                <div class="project-tech">
-                                    <p><i class="fab fa-html5 fa-lg"></i> HTML</p>
-                                    <p><i class="fab fa-css3-alt fa-lg"></i> CSS</p>
-                                    <p><i class="fab fa-js-square fa-lg"></i> JavaScript</p>
-                                    <p>Third-Party Library - clipboard.js</p>
-                                </div>
-                                <div class="project-links">
-                                    <button>See Live</button>
-                                    <button>See Code</button>
-                                    <button>See Case Study</button>
-                                </div>
-                            </div>
-                            <div class="img"><img src="./assets/images/cookemipsum.png" alt="Cookem' Ipsum Screenshot" /></div>
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="img-wrap">
+                                <div class="card-content">
+                                    <div class="project-title">
+                                        <p>Cookem' Ipsum</p>
+                                        <p>Chef Inspired Lorem Ipsum Text Generator</p>
+                                        <p><em>Deployed via Web Host</em></p>
+                                    </div><!-- /project-title -->
+                                    <div class="project-tech">
+                                        <p><i class="fab fa-html5 fa-lg"></i> HTML</p>
+                                        <p><i class="fab fa-css3-alt fa-lg"></i> CSS</p>
+                                        <p><i class="fab fa-js-square fa-lg"></i> JavaScript</p>
+                                        <p>Third-Party Library - clipboard.js</p>
+                                    </div><!-- /project-tech -->
+                                    <div class="project-links">
+                                        <a href="https://projects.shelaghstorla.com/cookemipsum/" target="_blank">
+                                            <button>See Live</button>
+                                        </a>
+                                        <a href="https://codepen.io/pinkplatypus/pen/djoaWX" target="_blank">
+                                            <button>See Code</button>
+                                        </a>
+                                        <button>See Case Study</button>
+                                    </div><!-- /project-links -->
+                                </div><!-- /card-content -->
+                                <div class="img"><img src="./assets/images/cookemipsum.png" alt="Cookem' Ipsum Screenshot" /></div>
+                            </div><!-- /img-wrap -->
+                        </div><!-- /card -->
+                        <div class="card">
+                            <div class="img-wrap">
+                                <div class="card-content">
+                                    <div class="project-title">
+                                        <p>Medium Clone</p>
+                                        <p>Laravel Class Project</p>
+                                        <p><em>Deployed via Amazon Web Services - EC2</em></p>
+                                    </div><!-- /project-title -->
+                                    <div class="project-tech">
+                                        <p><i class="fab fa-laravel fa-lg"></i> Laravel</p>
+                                        <p><i class="fab fa-sass fa-lg"></i> Sass</p>
+                                        <p>Blade Templates, Authentication, MySQL Databases</p>
+                                    </div><!-- /project-tech -->
+                                    <div class="project-links">
+                                        <a href="http://35.183.95.148/" target="_blank">
+                                            <button>See Live</button>
+                                        </a>
+                                        <a href="https://bitbucket.org/pinkplatypus/wbdv-fall-2018-php-shelagh-storla/src/master/" target="_blank">
+                                            <button>See Code</button>
+                                        </a>
+                                        <a href="https://bitbucket.org/pinkplatypus/wbdv-fall-2018-php-shelagh-storla/src/master/Journal.md" target="_blank">
+                                            <button>See Class Journal</button>
+                                        </a>
+                                    </div><!-- /project-links -->
+                                </div><!-- /card-content -->
+                                <div class="img"><img src="./assets/images/mediumclone.png" alt="Medium Clone Screenshot" /></div>
+                            </div><!-- /img-wrap -->
+                        </div><!-- /card -->
+                        <div class="card">
+                            <div class="img-wrap">
+                                <div class="card-content">
+                                    <div class="project-title">
+                                        <p>jQuery To Do List</p>
+                                        <p>Bootcamp jQuery Project</p>
+                                        <p><em>Deployed via Zeit Now</em></p>
+                                    </div><!-- /project-title -->
+                                    <div class="project-tech">
+                                        <p><i class="fab fa-html5 fa-lg"></i> HTML</p>
+                                        <p><i class="fab fa-css3-alt fa-lg"></i> CSS</p>
+                                        <p>jQuery</p>
+                                    </div><!-- /project-tech -->
+                                    <div class="project-links">
+                                        <a href="https://todolistproject-rdgfjfxlyb.now.sh/" target="_blank">
+                                            <button>See Live</button>
+                                        </a>
+                                        <a href="https://github.com/p1nkpl4typus/todolist" target="_blank">
+                                            <button>See Code</button>
+                                        </a>
+                                    </div><!-- /project-links -->
+                                </div><!-- /card-content -->
+                                <div class="img"><img src="./assets/images/todolist.png" alt="To Do List Project Screenshot" /></div>
+                            </div><!-- /img-wrap -->
+                        </div><!-- /card -->
+                        <div class="card">
+                            <div class="img-wrap">
+                                <div class="card-content">
+                                    <div class="project-title">
+                                        <p>YelpCamp!</p>
+                                        <p>Bootcamp Project</p>
+                                        <p><em>Deployed via Heroku with mLab Database</em></p>
+                                    </div><!-- /project-title -->
+                                    <div class="project-tech">
+                                        <p><i class="fab fa-node-js"></i> Node.js</p>
+                                        <p>Express</p>
+                                        <p>MongoDB, Mongoose</p>
+                                        <p>Authentication (Passport), Bootstrap</p>
+                                    </div><!-- /project-tech -->
+                                    <div class="project-links">
+                                        <a href="https://still-chamber-30208.herokuapp.com/" target="_blank">
+                                            <button>See Live</button>
+                                        </a>
+                                        <a href="https://github.com/p1nkpl4typus/wdb-yelpcamp" target="_blank">
+                                            <button>See Code</button>
+                                        </a>
+                                    </div><!-- /project-links -->
+                                </div><!-- /card-content -->
+                                <div class="img"><img src="./assets/images/yelpcamp.png" alt="YelpCamp! Screenshot" /></div>
+                            </div><!-- /img-wrap -->
+                        </div><!-- /card -->
+                        <div class="card">
+                            <div class="img-wrap">
+                                <div class="card-content">
+                                    <div class="project-title">
+                                        <p>Patatap Clone</p>
+                                        <p>Bootcamp Project </p>
+                                        <p><em>Deployed via Ziet Now</em></p>
+                                    </div><!-- /project-title -->
+                                    <div class="project-tech">
+                                        <p><i class="fab fa-js-square fa-lg"></i> JavaScript</p>
+                                        <p>Animations</p>
+                                        <p>Third-Party Libraries - Paper.js, howler.js</p>
+                                    </div><!-- /project-tech -->
+                                    <div class="project-links">
+                                        <a href="https://patatapcloneproject-yuhizmihbd.now.sh/" target="_blank">
+                                            <button>See Live</button>
+                                        </a>
+                                        <a href="https://github.com/p1nkpl4typus/patatapclone" target="_blank">
+                                            <button>See Code</button>
+                                        </a>
+                                    </div><!-- /project-links -->
+                                </div><!-- /card-content -->
+                                <div class="img"><img src="./assets/images/patatapclone.png" alt="Patatap Clone Screenshot" /></div>
+                            </div><!-- /img-wrap -->
+                        </div><!-- /card -->
+                        <div class="card">
+                            <div class="img-wrap">
+                                <div class="card-content">
+                                    <div class="project-title">
+                                        <p>Colour Palette Generator</p>
+                                        <p>JavaScript Class Project</p>
+                                        <p><em>Deployed via Ziet Now</em></p>
+                                    </div><!-- /project-title -->
+                                    <div class="project-tech">
+                                        <p><i class="fab fa-html5 fa-lg"></i> HTML</p>
+                                        <p><i class="fab fa-css3-alt fa-lg"></i> CSS</p>
+                                        <p>jQuery</p>
+                                        <p>Third-Party Library - randomColor</p>
+                                    </div><!-- /project-tech -->
+                                    <div class="project-links">
+                                        <a href="https://colourpalette-qkzrgnmiio.now.sh/" target="_blank">
+                                            <button>See Live</button>
+                                        </a>
+                                        <a href="https://github.com/p1nkpl4typus/sait-js/tree/master/day-6/homework" target="_blank">
+                                            <button>See Code</button>
+                                        </a>
+                                    </div><!-- /project-links -->
+                                </div><!-- /card-content -->
+                                <div class="img"><img src="./assets/images/colorpalette.png" alt="Colour Palette Generator Screenshot" /></div>
+                            </div><!-- /img-wrap -->
+                        </div><!-- /card -->
+                        <div class="card">
+                            <div class="img-wrap">
+                                <div class="card-content">
+                                    <div class="project-title">
+                                        <p>The Great RGB Colour Game</p>
+                                        <p>Bootcamp Code-Along Project </p>
+                                        <p><em>Deployed via Ziet Now</em></p>
+                                    </div><!-- /project-title -->
+                                    <div class="project-tech">
+                                        <p><i class="fab fa-html5 fa-lg"></i> HTML</p>
+                                        <p><i class="fab fa-css3-alt fa-lg"></i> CSS</p>
+                                        <p><i class="fab fa-js-square fa-lg"></i> JavaScript</p>
+                                    </div><!-- /project-tech -->
+                                    <div class="project-links">
+                                        <a href="https://greatrgbcolourgame-sbmspmbuwz.now.sh" target="_blank">
+                                            <button>See Live</button>
+                                        </a>
+                                        <a href="https://github.com/p1nkpl4typus/greatrgbcolourgame" target="_blank">
+                                            <button>See Code</button>
+                                        </a>
+                                    </div><!-- /project-links -->
+                                </div><!-- /card-content -->
+                                <div class="img"><img src="./assets/images/rgbcolor.png" alt="The Great RGB Color Game Screenshot" /></div>
+                            </div><!-- /img-wrap -->
+                        </div><!-- /card -->
+                        <div class="card">
+                            <div class="img-wrap">
+                                <div class="card-content">
+                                    <div class="project-title">
+                                        <p>Local Business Concept Website</p>
+                                        <p>HTML/CSS Final Class Project</p>
+                                        <p><em>Deployed via Ziet Now</em></p>
+                                    </div><!-- /project-title -->
+                                    <div class="project-tech">
+                                        <p><i class="fab fa-html5 fa-lg"></i> HTML</p>
+                                        <p><i class="fab fa-css3-alt fa-lg"></i> CSS</p>
+                                        <p><i class="fab fa-js-square fa-lg"></i> JavaScript</p>
+                                    </div><!-- /project-tech -->
+                                    <div class="project-links">
+                                        <a href="https://assignment-four-ddmovvyzgo.now.sh" target="_blank">
+                                            <button>See Live</button>
+                                        </a>
+                                        <a href="https://github.com/p1nkpl4typus/Assignment-Four" target="_blank">
+                                            <button>See Code</button>
+                                        </a>
+                                    </div><!-- /project-links -->
+                                </div><!-- /card-content -->
+                                <div class="img"><img src="./assets/images/websiteconcept.png" alt="The Great RGB Color Game Screenshot" /></div>
+                            </div><!-- /img-wrap -->
+                        </div><!-- /card -->
+                    </div><!-- /card-wrap -->
+                    <div class="copyright">
+                        <div>
+                            © Copyright 2018 - Shelagh Storla
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrap">
-                            <div class="card-content">
-                                <div class="project-title">
-                                    <p>Cookem' Ipsum</p>
-                                </div>
-                                <div class="project-tech">
-                                    <p><i class="fab fa-html5"></i></p>
-                                    <p><i class="fab fa-css3-alt"></i></p>
-                                    <p><i class="fab fa-js-square"></i></p>
-                                </div>
-                            </div>
-                            <div class="img"><img src="./assets/images/mediumclone.png" alt="Medium Clone Screenshot" /></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrap">
-                            <div class="img"><img src="./assets/images/todolist.png" alt="To Do List Project Screenshot" /></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrap">
-                            <div class="img"><img src="./assets/images/yelpcamp.png" alt="YelpCamp! Screenshot" /></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrap">
-                            <div class="img"><img src="./assets/images/patatapclone.png" alt="Patatap Clone Screenshot" /></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrap">
-                            <div class="img"><img src="./assets/images/colorpalette.png" alt="Colour Palette Generator Screenshot" /></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-wrap">
-                            <div class="img"><img src="./assets/images/rgbcolor.png" alt="The Great RGB Color Game Screenshot" /></div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        </div>
+                    </div><!-- /copyright -->
+                </div><!-- /content -->
+            </section><!-- /my-work -->
+        </div><!-- /display-wrap -->
 
         <div class="display-wrap">
             <section id="contact">
@@ -168,7 +324,7 @@
                         <h3><span>•</span> Contact <span>•</span></h3>
                     </div>
                     <div class="logo"><a class="pageload-link" href="#splash"><img src="./assets/logo1.png" alt="Shelagh Storla"></a></div>
-                </div>
+                </div><!-- /top-bar -->
                 <div class="content">
                     <p>Feel free to <a href="https://twitter.com/p1nkpl4typus" target="_blank">tweet me</a>, check out my <a href="https://www.instagram.com/p1nkpl4typus/" target="_blank">puppy pictures on Instagram</a>, look into my web experiments on <a href="https://codepen.io/pinkplatypus/" target="_blank">CodePen</a>, connect with me on <a href="https://www.linkedin.com/in/shelagh-storla/" target="_blank">LinkedIn</a>, or see my code on <a href="https://github.com/p1nkpl4typus" target="_blank">GitHub!</a> You can find me here:</p>
                     <div class="social-links">
@@ -222,7 +378,7 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div><!-- /social-links -->
                     <p>If you would like to contact me regarding work opportunities, feel free to <a href="mailto:iam@shelaghstorla.com">email me</a>:</p>
                     <div class="email">
                         <div class="icon">
@@ -232,7 +388,7 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div><!-- /email -->
                     <p>Otherwise, drop me a note here!</p>
                     <div class="contact-form-box">
                         <form action="http://localhost/portfolio/contact.php" method="POST" id="contact-form">
@@ -240,12 +396,10 @@
                                 <div>
                                     <label for="name">Name:</label>
                                     <input type="text" name="name" id="name" required />
-
                                 </div>
                                 <div>
                                     <label for="email">Email:</label>
                                     <input type="email" name="email" id="email" required />
-
                                 </div>
                                 <div class="textbox">
                                     <div>
@@ -254,33 +408,29 @@
                                     <div>
                                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Say Hi!..." required ></textarea>
                                     </div>
-
-                                </div>
+                                </div><!-- /textbox -->
                                 <div>
                                     <input type="submit" name="submit" id="submit">
-
                                 </div>
-
-                            </form>
-                            
-                        </div>
+                            </form> 
+                        </div><!-- /contact-form-box -->
                         <div class="response-box no-display"></div>
                     <div class="copyright">
                         <div>
                             © Copyright 2018 - Shelagh Storla
                         </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+                    </div><!-- /copyright -->
+                </div><!-- /content -->
+            </section><!-- /contact -->
+        </div><!-- /display-wrap -->
 
         <div id="loader" class="pageload-overlay" data-opening="M 40,100 150,0 -65,0 z">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
                 <path d="M 40,100 150,0 l 0,0 z"/>
             </svg>
-        </div>
+        </div><!-- /loader-->
 
-    </div>
+    </div><!-- /pagewrap -->
       
 
     <script src="./js/classie.js"></script>
