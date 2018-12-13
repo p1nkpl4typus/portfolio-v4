@@ -6,14 +6,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .title {
     z-index: 2;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #fff;
     text-shadow: 0px 0px 10px #000;
+    height: 300%;
 
     h1 {
         font-size: 4em;
@@ -25,6 +30,7 @@
         font-size: 2em;
         letter-spacing: 0.35em;
         text-transform: uppercase;
+        font-family: $alt-heading-txt;
     }
 }
 
@@ -33,6 +39,7 @@ nav {
     position: absolute;
     bottom: 50px;
     font-size: 1.5em;
+    font-family: $alt-heading-txt;
 
     a {
         text-decoration: none;
@@ -56,4 +63,76 @@ nav {
         transition: 0.4s;
     }
 
+    
+}
+
+.privacy-wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .privacy-popup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 400px;
+        background: #000;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 15px 0px 0px 0px;
+    
+        p {
+            font-family: $alt-heading-txt;
+            font-size: 0.8em;
+            padding: 20px 20px 0 20px;
+    
+            a {
+                color: #fff;
+            }
+        }
+    
+        button {
+            border: 1px solid white;
+            background: none;
+            font-family: $alt-heading-txt;
+            border-radius: 5px;
+            color: #fff;
+            padding: 10px;
+            letter-spacing: 0.2em;
+            font-weight: bold;
+        }
+    
+        button:hover {
+            cursor: pointer;
+            background: #fff;
+            color: #000;
+        }
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    nav {
+        bottom: 250px;
+    }
+
+    .privacy-wrap {
+
+        .privacy-popup {
+            right: 0;
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .title {
+
+        h2 {
+            font-size: 1.4em;
+        }
+    }
 }

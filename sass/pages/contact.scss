@@ -80,6 +80,7 @@
                 opacity: 1;
                 transition: opacity 0.4s ease-in, transform 0.4s ease-in;
                 transform: scale(1);
+                font-family: $alt-heading-txt;
             }
         }
 
@@ -97,6 +98,7 @@
             left: 0%;
             right: auto;
             transform: scale(1.5);
+            font-family: $alt-heading-txt;
         }
 
     }

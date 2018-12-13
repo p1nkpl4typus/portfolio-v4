@@ -17,3 +17,10 @@ form.addEventListener("submit", event => {
     xhr.open("POST", form.action);
     xhr.send(fd);
 });
+
+const dismissButton = document.querySelector("#dismiss");
+const privacyPop = document.querySelector(".privacy-popup");
+
+dismissButton.addEventListener("click", function() {
+    privacyPop.setAttribute("style", "display: none;");
+})

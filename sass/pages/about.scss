@@ -4,11 +4,20 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #707778;
-    height: 100vh;
-    overflow: hidden;
 
     h4 {
         font-size: 2em;
+        font-family: $alt-heading-txt;
+        margin: 25px 0;
+    }
+
+    li {
+        font-size: 1.5em;
+        letter-spacing: 0.125em;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 1px 0px 5px #000;
+        margin-bottom: 10px;
     }
 }
 

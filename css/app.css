@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Montez|Wire+One");
+@import url("https://fonts.googleapis.com/css?family=Montez|Montserrat|Wire+One");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0; }
 
 body {
-  font-family: "Wire One", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
   body p, body label {
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: 0.125em;
     font-weight: bold;
     color: #fff;
@@ -43,7 +43,7 @@ body {
     color: white;
     transition: 0.4s; }
   .top-bar h3 {
-    font-family: "Montez", cursive;
+    font-family: "Wire One", sans-serif;
     font-weight: normal;
     font-size: 5em;
     color: #fff;
@@ -203,6 +203,30 @@ body {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s; }
 
+.slide-in {
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both; }
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
 #splash {
   background-image: url("../assets/images/main-bg.jpg");
   background-size: cover;
@@ -210,14 +234,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  overflow: hidden; }
 
 .title {
   z-index: 2;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #fff;
-  text-shadow: 0px 0px 10px #000; }
+  text-shadow: 0px 0px 10px #000;
+  height: 300%; }
   .title h1 {
     font-size: 4em;
     font-family: "Montez", cursive;
@@ -225,13 +254,15 @@ body {
   .title h2 {
     font-size: 2em;
     letter-spacing: 0.35em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "Wire One", sans-serif; }
 
 nav {
   z-index: 2;
   position: absolute;
   bottom: 50px;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-family: "Wire One", sans-serif; }
   nav a {
     text-decoration: none;
     color: #fff;
@@ -250,6 +281,54 @@ nav {
     background-repeat: repeat-x;
     background-size: 2px 1px;
     transition: 0.4s; }
+
+.privacy-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  .privacy-wrap .privacy-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 400px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 15px 0px 0px 0px; }
+    .privacy-wrap .privacy-popup p {
+      font-family: "Wire One", sans-serif;
+      font-size: 0.8em;
+      padding: 20px 20px 0 20px; }
+      .privacy-wrap .privacy-popup p a {
+        color: #fff; }
+    .privacy-wrap .privacy-popup button {
+      border: 1px solid white;
+      background: none;
+      font-family: "Wire One", sans-serif;
+      border-radius: 5px;
+      color: #fff;
+      padding: 10px;
+      letter-spacing: 0.2em;
+      font-weight: bold; }
+    .privacy-wrap .privacy-popup button:hover {
+      cursor: pointer;
+      background: #fff;
+      color: #000; }
+
+@media screen and (max-width: 1180px) {
+  nav {
+    bottom: 250px; }
+  .privacy-wrap .privacy-popup {
+    right: 0;
+    width: 100%;
+    border-radius: 0; } }
+
+@media screen and (max-width: 475px) {
+  .title h2 {
+    font-size: 1.4em; } }
 
 #contact {
   background: linear-gradient(to bottom, rgba(75, 119, 130, 0.7), rgba(75, 119, 130, 0.7)), url("../assets/images/contact-bg.png");
@@ -308,7 +387,8 @@ nav {
         right: auto;
         opacity: 1;
         transition: opacity 0.4s ease-in, transform 0.4s ease-in;
-        transform: scale(1); }
+        transform: scale(1);
+        font-family: "Wire One", sans-serif; }
     #contact .icon .visible {
       position: relative;
       margin-right: 0.15em;
@@ -319,7 +399,8 @@ nav {
       width: 100%;
       left: 0%;
       right: auto;
-      transform: scale(1.5); }
+      transform: scale(1.5);
+      font-family: "Wire One", sans-serif; }
 
 .contact-form-box {
   flex-direction: column; }
@@ -335,7 +416,7 @@ nav {
     color: rgba(255, 255, 255, 0.6); }
   .contact-form-box #submit {
     cursor: pointer;
-    font-family: "Wire One", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.2em;
     font-weight: bold;
     letter-spacing: 0.125em; }
@@ -348,11 +429,18 @@ nav {
   background: linear-gradient(to bottom, rgba(112, 119, 120, 0.9), rgba(112, 119, 120, 0.9)), url("../assets/images/shelagh1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #707778;
-  height: 100vh;
-  overflow: hidden; }
+  background-color: #707778; }
   #about h4 {
-    font-size: 2em; }
+    font-size: 2em;
+    font-family: "Wire One", sans-serif;
+    margin: 25px 0; }
+  #about li {
+    font-size: 1.5em;
+    letter-spacing: 0.125em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 0px 5px #000;
+    margin-bottom: 10px; }
 
 @media screen and (max-width: 975px) {
   #about {
@@ -400,7 +488,8 @@ nav {
         #my-work .card-wrap .card .card-content p {
           color: #4b7782;
           text-shadow: none;
-          font-size: 1.2em; }
+          font-size: 1.2em;
+          font-family: "Wire One", sans-serif; }
         #my-work .card-wrap .card .card-content .project-title {
           position: absolute;
           top: 10px;
@@ -421,11 +510,12 @@ nav {
             border: 1px solid #4b7782;
             padding: 8px;
             border-radius: 5px;
-            font-family: "Wire One", sans-serif;
+            font-family: "Montserrat", sans-serif;
             color: #4b7782;
             font-weight: bold;
             font-size: 1.4em;
-            margin: 5px; }
+            margin: 5px;
+            font-family: "Wire One", sans-serif; }
           #my-work .card-wrap .card .card-content .project-links button:hover {
             background-color: #4b7782;
             color: #fff;
@@ -436,3 +526,47 @@ nav {
   .img-wrap:hover .img {
     visibility: hidden;
     opacity: 0; } }
+
+.privacy-policy {
+  font-family: "Montserrat", sans-serif;
+  background-color: #4b7782;
+  font-size: 0.6em;
+  padding: 15px; }
+  .privacy-policy h1 {
+    font-size: 3em;
+    padding: 15px 0; }
+  .privacy-policy h2 {
+    font-size: 2em;
+    padding: 15px 0; }
+  .privacy-policy h3 {
+    font-size: 1.7em;
+    padding: 15px 0; }
+  .privacy-policy h4 {
+    font-size: 1.5em;
+    padding: 15px 0; }
+  .privacy-policy p a {
+    font-size: inherit; }
+  .privacy-policy a {
+    font-size: 1.7em;
+    text-decoration: none;
+    color: #fff;
+    margin: 15px;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+    background: linear-gradient(to top, #fff 100%, #fff 0%);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: 2px 0px;
+    transition: 0.4s; }
+  .privacy-policy a:hover {
+    padding-bottom: 4px;
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 1px;
+    transition: 0.4s; }
+  .privacy-policy ul {
+    margin: 0 30px;
+    color: #fff;
+    font-size: 1.7em;
+    margin-bottom: 20px; }
