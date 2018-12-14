@@ -20,7 +20,7 @@
 
     &--near {
         animation-duration: $s--near;
-        background-image: url('../assets/images/snow-near.png');
+        background-image: url('../images/snow-near.png');
         background-size: contain;
         
         & + .snow--alt {
@@ -30,7 +30,7 @@
         
       &--mid {
         animation-duration: $s--mid;
-        background-image: url('../assets/images/snow-mid.png');
+        background-image: url('../images/snow-mid.png');
         background-size: contain;
         
         & + .snow--alt {
@@ -40,7 +40,7 @@
         
       &--far {
         animation-duration: $s--far;
-        background-image: url('../assets/images/snow-far.png');
+        background-image: url('../images/snow-far.png');
         background-size: contain;
         
         & + .snow--alt {

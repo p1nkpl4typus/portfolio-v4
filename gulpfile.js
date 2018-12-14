@@ -8,7 +8,7 @@ gulp.task('test', function() {
 gulp.task('style', function() {
     gulp.src('./sass/app.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./css'))
+        .pipe(gulp.dest('./assets/css'))
 })
 
 gulp.task('watch', function() {
